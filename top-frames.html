@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover the top frames at Pair Eyewear. Visit our frame shop for a wide selection of styles, including sun frames and more.">
+    <meta name="keywords" content="frame shop, framing store, framing shop, sun frames">
+    <meta name="author" content="Manjeet Singh">
+    <title>Explore Top Frames at Pair Eyewear: Frame Shop and More</title>
+    <link rel="stylesheet" href="topframes.css" />
+    <link rel="stylesheet" href="navfooter.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Pair Eyewear: Your Go-To Glasses Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="top-frames.html">Top Frames</a></li>
+                <li><a href="mens-sunglasses.html">Men’s Sunglasses</a></li>
+                <li><a href="womens-sunglasses.html">Women’s Sunglasses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <div class="hero-overlay">
+                <h2>Top Frames Collection</h2>
+                <p>Shop the finest frames with style, comfort, and innovation.</p>
+            </div>
+        </section>
+
+        <div class="frame-slider">
+            <div class="frame-item active">
+                <div class="frame-image">
+                    <img src="imgs/packoptical-hero-framessunglasses.jpg" alt="Premium top frames collection at Pair Eyewear, showcasing modern and stylish eyewear" />
+                </div>
+                <h2>Welcome to Our Frame Shop</h2>
+                <p>Welcome to the Top Frames page at Pair Eyewear, where you can explore our curated selection of the finest frames. Our frame shop is dedicated to offering a diverse range of styles that cater to every taste and preference.</p>
+            </div>
+        
+            <div class="frame-item">
+                <div class="frame-image">
+                    <img src="imgs/How_Do_I_Know_If_My_Child_s_Glasses_Fit_Well_header_1.jpg" alt="Elegant frame selection at Pair Eyewear, offering a variety of fashionable eyewear designs" />
+                </div>
+                <h2>Discover Our Framing Store Collection</h2>
+                <p>Our framing store collection features a wide array of styles, from sleek and modern to timeless and elegant. Each frame is designed to enhance your look and provide the perfect fit.</p>
+            </div>
+        
+            <div class="frame-item">
+                <div class="frame-image">
+                    <img src="imgs/41Ct7TjoFgL._AC_UY1000_.jpg" alt="Stylish sun frames from Pair Eyewear, combining fashion with UV protection for a perfect fit" />
+                </div>
+                <h2>Sun Frames: Style and Protection</h2>
+                <p>Our sun frames offer the perfect blend of style and protection. Designed to shield your eyes from harmful UV rays, these frames ensure you stay fashionable while protecting your vision.</p>
+            </div>
+        
+            <div class="frame-item">
+                <div class="frame-image">
+                    <img src="imgs/16.jpg" alt="High-quality frames designed for comfort and durability at Pair Eyewear" />
+                </div>
+                <h2>Why Choose Our Frames?</h2>
+                <p>Choosing frames from Pair Eyewear means investing in quality and style. We use high-quality materials and innovative design techniques to create frames that are both durable and comfortable.</p>
+            </div>
+        
+            <div class="frame-item">
+                <div class="frame-image">
+                    <img src="imgs/success_stories-1024x535-300x157.png" alt="Customer wearing frames from Pair Eyewear, highlighting comfort and style" />
+                </div>
+                <h2>Customer Stories and Testimonials</h2>
+                <p>Our customers are our greatest advocates. Alex, a satisfied customer, praised the comfort and design of his new frames, noting how they have become an essential part of his daily wardrobe.</p>
+            </div>
+        
+            <div class="frame-item">
+                <div class="frame-image">
+                    <img src="imgs/e116de_a6fa94d91e3745d6895775a6c20c8f24~mv2.jpg" alt="Explore wide variety of frames at Pair Eyewear, with stylish and comfortable designs" />
+                </div>
+                <h2>Explore Our Framing Shop</h2>
+                <p>We invite you to explore our framing shop and discover the perfect frames for you. With a wide range of options and styles, you're sure to find eyewear that suits your needs and enhances your look.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pair Eyewear | Designed by Manjeet Singh</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.frame-item');
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 5000);
+    </script>
+
+</body>
+</html>
